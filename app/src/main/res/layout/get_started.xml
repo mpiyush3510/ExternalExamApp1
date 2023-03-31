@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Primary"
+    tools:context=".Startup.GetStarted">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/ic_college"
+            app:tint="@color/White"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sybca5"
+            android:textColor="@color/White"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="0dp"
+            android:padding="2dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="@drawable/bg_get_started"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center|top">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_started"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/Primary"
+            android:gravity="center"
+            android:layout_margin="52dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/SignIn"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textColor="@color/White"
+            android:textSize="28sp"
+            app:cornerRadius="12dp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_gravity="center"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/SignUp"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textColor="@color/White"
+            android:textSize="28sp"
+            app:cornerRadius="12dp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

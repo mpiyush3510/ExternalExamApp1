@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".Activities.SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="@drawable/bg_sign_in"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="375dp"
+            android:layout_height="300dp"
+            app:cardCornerRadius="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|top">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in"
+                    android:textStyle="bold"
+                    android:textSize="32sp"
+                    android:textColor="@color/Primary"
+                    android:gravity="center"
+                    android:layout_margin="17dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_or_phone"
+                    app:boxStrokeColor="@color/Primary"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EmailOrPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:layout_marginTop="2dp"
+                    app:boxStrokeColor="@color/Primary"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/SignIn"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/White"
+                    android:textSize="22sp"
+                    app:cornerRadius="12dp"
+                    android:gravity="center"
+                    android:layout_margin="17dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</RelativeLayout>
